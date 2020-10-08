@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    android:layout_marginBottom="70dp">
+
+    <TextView
+        android:id="@+id/GH_TieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Giỏ Hàng Của Tôi"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="left"
+
+        />
+    <TextView
+        android:id="@+id/GH_gia"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Tổng Tiền: "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/GH_BT_MuaHang"
+        android:layout_width="353dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="630dp"
+        android:background="#00BCD4"
+        android:text="Mua Hàng"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:layout_marginStart="180dp"
+        android:indeterminateDrawable="@drawable/progress"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/GH_RC"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="55dp" />
+
+</RelativeLayout>

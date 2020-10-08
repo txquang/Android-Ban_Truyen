@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_2"
+    tools:context=".fragment.SanPhamFragment"
+    android:orientation="vertical"
+    android:layout_marginBottom="70dp">
+
+    <!-- TODO: Update blank fragment layout-->
+
+    <LinearLayout
+        android:id="@+id/cardSearch"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:background="#87FFFFFF">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_back"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="265dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_search_primary_light"
+            android:drawableLeft="@drawable/ic_search_primary_light"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:hint="Tìm Kiếm"
+            android:inputType="text|textNoSuggestions"
+            android:padding="10dp"
+            android:textColor="#000000">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/ic_cart"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ic_menu"
+            android:scaleType="fitCenter" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:layout_marginStart="180dp"
+        android:indeterminateDrawable="@drawable/progress"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RC_SP"
+        android:layout_below="@+id/cardSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

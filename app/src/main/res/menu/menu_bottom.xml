@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:title="Trang Chủ"
+        android:icon="@drawable/ic_home"
+        app:cnb_backgroundColor="#003366"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:id="@+id/home1"
+        android:title="Sản Phẩm"
+        android:icon="@drawable/ic_activity"
+        app:cnb_backgroundColor="#003366"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:id="@+id/home2"
+        android:title="Giỏ Hàng"
+        android:icon="@drawable/ic_heart"
+        app:cnb_backgroundColor="#003366"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+    <item
+        android:id="@+id/home3"
+        android:title="Tài Khoản"
+        android:icon="@drawable/ic_settings"
+        app:cnb_backgroundColor="#003366"
+        app:cnb_iconColor="#fff"
+        app:cnb_textColor="#fff"/>
+
+
+</menu>

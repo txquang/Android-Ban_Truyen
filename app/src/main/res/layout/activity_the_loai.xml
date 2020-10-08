@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TheLoaiActivity"
+    android:background="@drawable/gradient_2">
+
+    <LinearLayout
+        android:id="@+id/TL_Liner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TL_TV_TheLoai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tâm Lý"
+            android:textSize="22dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="#66000000"
+            android:padding="5dp"
+           />
+        <TextView
+            android:id="@+id/TL_TV_SoLuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="10dp"
+            android:text="Tâm Lý"
+            android:textColor="#fff"
+            android:background="#66000000"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_below="@id/TL_Liner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="250dp"
+        android:indeterminateDrawable="@drawable/progress"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/TL_RC_TheLoai"
+        android:layout_below="@id/TL_Liner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>
